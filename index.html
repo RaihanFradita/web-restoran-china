@@ -6,14 +6,18 @@
     <title>Golden Dragon - Restoran China</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
 
+    <!-- NAVIGATION -->
     <nav class="dashboard">
         <div class="container dashboard-inner">
             <span class="dashboard-brand">Golden Dragon</span>
+
             <ul class="dashboard-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#video">Video</a></li>
+                <li><a href="#promo">Promo</a></li>
                 <li><a href="#pemesanan">Cara Pesan</a></li>
                 <li><a href="#kategori">Kategori</a></li>
                 <li><a href="#menu">Menu</a></li>
@@ -22,188 +26,643 @@
         </div>
     </nav>
 
+
+    <!-- HERO -->
     <header class="hero" id="home">
         <div class="container">
+
             <div class="mark">
-                <svg viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="23" cy="23" r="21.5" stroke="#c9a227" stroke-width="1"/>
-                    <path d="M14 27c3-8 6-12 9-12s6 4 9 12" stroke="#c9a227" stroke-width="1.2" stroke-linecap="round"/>
-                    <circle cx="23" cy="18" r="2" fill="#b8001f"/>
+                <svg viewBox="0 0 46 46" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+
+                    <circle
+                        cx="23"
+                        cy="23"
+                        r="21.5"
+                        stroke="#c9a227"
+                        stroke-width="1"
+                    />
+
+                    <path
+                        d="M14 27c3-8 6-12 9-12s6 4 9 12"
+                        stroke="#c9a227"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                    />
+
+                    <circle
+                        cx="23"
+                        cy="18"
+                        r="2"
+                        fill="#b8001f"
+                    />
                 </svg>
             </div>
+
             <h1>Golden <b>Dragon</b></h1>
+
             <div class="rule"></div>
-            <p class="tagline">Hidangan khas China dengan cita rasa autentik, disajikan dengan bahan segar dan harga yang bersahabat — di jantung Chinatown Jakarta.</p>
-            <p class="meta">Jl. Chinatown No. 88 · Jakarta</p>
+
+            <p class="tagline">
+                Hidangan khas China dengan cita rasa autentik,
+                disajikan dengan bahan segar dan harga yang bersahabat
+                — di jantung Chinatown Jakarta.
+            </p>
+
+            <p class="meta">
+                Jl. Chinatown No. 88 · Jakarta
+            </p>
+
         </div>
     </header>
 
+
     <main class="container">
 
+        <!-- VIDEO -->
         <section class="video-section" id="video">
+
             <h2>Video Restoran</h2>
-            <p class="section-note">Suasana dapur dan hidangan kami, langsung dari Golden Dragon.</p>
+
+            <p class="section-note">
+                Suasana dapur dan hidangan kami,
+                langsung dari Golden Dragon.
+            </p>
+
             <div class="video-wrapper">
-                <video controls poster="images/video-poster.jpg">
-                    <source src="restoran-china.mp4" type="video/mp4">
-                    Browser Anda tidak mendukung pemutaran video.
+
+                <video controls>
+                    <source
+                        src="restoran-china.mp4"
+                        type="video/mp4"
+                    >
+
+                    Browser Anda tidak mendukung
+                    pemutaran video.
                 </video>
+
             </div>
+
         </section>
 
+
+        <!-- PROMO -->
+        <section class="promo-section" id="promo">
+
+            <h2>Promo & Penawaran</h2>
+
+            <p class="section-note">
+                Nikmati berbagai penawaran spesial Golden Dragon
+                untuk makan bersama keluarga dan teman.
+            </p>
+
+            <table class="promo-table">
+
+                <caption>
+                    Penawaran Spesial Golden Dragon
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th>Promo</th>
+                        <th>Isi Promo</th>
+                        <th>Harga</th>
+                        <th>Keterangan</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <th>Family Feast</th>
+                        <td>
+                            3 hidangan utama + 2 minuman
+                        </td>
+                        <td class="price">
+                            $10.00
+                        </td>
+                        <td>
+                            Cocok untuk 3–4 orang
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Lunch Special</th>
+                        <td>
+                            Chinese Fried Rice + Chinese Tea
+                        </td>
+                        <td class="price">
+                            $3.50
+                        </td>
+                        <td>
+                            Berlaku pukul 10.00–14.00
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Dumpling Deal</th>
+                        <td>
+                            2 porsi Chinese Dumpling
+                        </td>
+                        <td class="price">
+                            $4.50
+                        </td>
+                        <td>
+                            Cocok untuk makan bersama
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- CARA PEMESANAN -->
         <section class="order-section" id="pemesanan">
+
             <h2>Cara Pemesanan</h2>
-            <p class="section-note">Agar kunjungan Anda nyaman dan pesanan sampai dengan tepat, ikuti langkah-langkah sederhana berikut saat memesan makanan di Golden Dragon.</p>
+
+            <p class="section-note">
+                Ikuti langkah sederhana berikut saat
+                melakukan pemesanan di Golden Dragon.
+            </p>
+
             <ol class="steps-list">
-                <li>Pilih meja atau tempat duduk yang tersedia di area restoran.</li>
-                <li>Lihat daftar menu yang disediakan oleh pelayan atau tersedia di meja.</li>
-                <li>Pilih hidangan dan minuman sesuai selera dan kebutuhan Anda.</li>
-                <li>Sampaikan pesanan kepada pelayan, atau lakukan pemesanan langsung di kasir.</li>
-                <li>Tunggu pesanan diproses dan disajikan oleh staf dapur kami.</li>
-                <li>Nikmati hidangan Anda, lalu lakukan pembayaran di kasir sebelum meninggalkan restoran.</li>
+
+                <li>
+                    Pilih meja atau tempat duduk yang tersedia.
+                </li>
+
+                <li>
+                    Lihat daftar menu yang tersedia.
+                </li>
+
+                <li>
+                    Pilih hidangan dan minuman sesuai selera.
+                </li>
+
+                <li>
+                    Sampaikan pesanan kepada pelayan
+                    atau lakukan pemesanan di kasir.
+                </li>
+
+                <li>
+                    Tunggu pesanan diproses dan disajikan.
+                </li>
+
+                <li>
+                    Nikmati hidangan kemudian lakukan
+                    pembayaran di kasir.
+                </li>
+
             </ol>
+
         </section>
 
+
+        <!-- KATEGORI -->
         <section class="category-section" id="kategori">
+
             <h2>Kategori Menu</h2>
-            <p class="section-note">Menu kami terbagi ke dalam tiga kategori utama, yaitu makanan, minuman, dan dessert, agar Anda lebih mudah menentukan pilihan.</p>
-            <ul class="category-list">
-                <li>Makanan
-                    <ul>
-                        <li>Kung Pao Chicken</li>
-                        <li>Chinese Dumpling</li>
-                        <li>Chinese Fried Rice</li>
-                        <li>Chow Mein</li>
-                        <li>Sweet and Sour Chicken</li>
-                    </ul>
-                </li>
-                <li>Minuman
-                    <ul>
-                        <li>Chinese Tea</li>
-                    </ul>
-                </li>
-                <li>Dessert
-                    <ul>
-                        <li>Es Buah Mandarin</li>
-                        <li>Puding Lychee</li>
-                        <li>Tangyuan (Bola Ketan Manis)</li>
-                    </ul>
-                </li>
-            </ul>
+
+            <p class="section-note">
+                Gunakan tabel berikut untuk melihat
+                kategori dan pilihan menu Golden Dragon.
+            </p>
+
+            <table class="category-table">
+
+                <caption>
+                    Kategori Menu Restoran
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th>Kategori</th>
+                        <th>Pilihan Menu</th>
+                        <th>Keterangan</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <th>Makanan</th>
+
+                        <td>
+                            Kung Pao Chicken<br>
+                            Chinese Dumpling<br>
+                            Chinese Fried Rice<br>
+                            Chow Mein<br>
+                            Sweet and Sour Chicken
+                        </td>
+
+                        <td>
+                            Hidangan utama khas China
+                            dengan berbagai pilihan rasa.
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <th>Minuman</th>
+
+                        <td>
+                            Chinese Tea
+                        </td>
+
+                        <td>
+                            Teh China dengan aroma
+                            khas dan menyegarkan.
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <th>Dessert</th>
+
+                        <td>
+                            Es Buah Mandarin<br>
+                            Puding Lychee<br>
+                            Tangyuan
+                        </td>
+
+                        <td>
+                            Pilihan makanan penutup
+                            dengan cita rasa manis.
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
         </section>
 
+
+        <!-- MENU -->
         <section class="menu-section" id="menu">
+
             <h2>Daftar Menu</h2>
-            <p class="section-note">Enam hidangan andalan kami, dari wajan panas ke meja Anda.</p>
 
-            <div class="group-label">Hidangan Utama</div>
-            <div class="menu-grid">
+            <p class="section-note">
+                Hidangan pilihan Golden Dragon,
+                dari dapur langsung ke meja Anda.
+            </p>
 
-                <article class="menu-item">
-                    <div class="menu-img-wrapper">
-                        <img src="images/Kung Pao Chicken.jpg" alt="Kung Pao Chicken">
-                    </div>
-                    <div class="menu-content">
-                        <div class="dish-top">
-                            <span class="dish-name">Kung Pao Chicken</span>
-                            <span class="dish-leader"></span>
-                            <span class="dish-price">$3.50</span>
-                        </div>
-                        <p class="dish-desc">Ayam dengan kacang dan sayuran khas China.</p>
-                    </div>
-                </article>
 
-                <article class="menu-item">
-                    <div class="menu-img-wrapper">
-                        <img src="images/jiaozi-dumplings.jpg" alt="Chinese Dumpling">
-                    </div>
-                    <div class="menu-content">
-                        <div class="dish-top">
-                            <span class="dish-name">Chinese Dumpling</span>
-                            <span class="dish-leader"></span>
-                            <span class="dish-price">$2.50</span>
-                        </div>
-                        <p class="dish-desc">Dim sum berisi daging dan sayuran.</p>
-                    </div>
-                </article>
-
-                <article class="menu-item">
-                    <div class="menu-img-wrapper">
-                        <img src="images/Chinese Fried Rice.jpg" alt="Chinese Fried Rice">
-                    </div>
-                    <div class="menu-content">
-                        <div class="dish-top">
-                            <span class="dish-name">Chinese Fried Rice</span>
-                            <span class="dish-leader"></span>
-                            <span class="dish-price">$2.80</span>
-                        </div>
-                        <p class="dish-desc">Nasi goreng khas China dengan telur dan sayuran.</p>
-                    </div>
-                </article>
-
-                <article class="menu-item">
-                    <div class="menu-img-wrapper">
-                        <img src="images/Chicken Chow Mein.jpg" alt="Chow Mein">
-                    </div>
-                    <div class="menu-content">
-                        <div class="dish-top">
-                            <span class="dish-name">Chow Mein</span>
-                            <span class="dish-leader"></span>
-                            <span class="dish-price">$3.00</span>
-                        </div>
-                        <p class="dish-desc">Mie goreng khas China dengan ayam dan sayuran.</p>
-                    </div>
-                </article>
-
-                <article class="menu-item">
-                    <div class="menu-img-wrapper">
-                        <img src="images/Sweet and Sour Chicken.jpg" alt="Sweet and Sour Chicken">
-                    </div>
-                    <div class="menu-content">
-                        <div class="dish-top">
-                            <span class="dish-name">Sweet and Sour Chicken</span>
-                            <span class="dish-leader"></span>
-                            <span class="dish-price">$3.20</span>
-                        </div>
-                        <p class="dish-desc">Ayam dengan saus asam manis khas China.</p>
-                    </div>
-                </article>
+            <div class="group-label">
+                Hidangan Utama
             </div>
 
-            <div class="group-label">Minuman</div>
-            <div class="menu-grid">
-                <article class="menu-item">
-                    <div class="menu-img-wrapper">
-                        <img src="images/Chinese Tea.jpg" alt="Chinese Tea">
-                    </div>
-                    <div class="menu-content">
-                        <div class="dish-top">
-                            <span class="dish-name">Chinese Tea</span>
-                            <span class="dish-leader"></span>
-                            <span class="dish-price">$1.00</span>
-                        </div>
-                        <p class="dish-desc">Teh China dengan aroma khas dan menyegarkan.</p>
-                    </div>
-                </article>
+
+            <!-- MENU TABLE -->
+            <table class="menu-table">
+
+                <tbody>
+
+                    <tr>
+
+                        <!-- MENU 1 -->
+                        <td>
+
+                            <article class="menu-item">
+
+                                <div class="menu-img-wrapper">
+                                    <img
+                                        src="images/Kung Pao Chicken.jpg"
+                                        alt="Kung Pao Chicken"
+                                    >
+                                </div>
+
+                                <div class="menu-content">
+
+                                    <div class="dish-top">
+
+                                        <span class="dish-name">
+                                            Kung Pao Chicken
+                                        </span>
+
+                                        <span class="dish-leader"></span>
+
+                                        <span class="dish-price">
+                                            $3.50
+                                        </span>
+
+                                    </div>
+
+                                    <p class="dish-desc">
+                                        Ayam dengan kacang dan
+                                        sayuran khas China.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                        </td>
+
+
+                        <!-- MENU 2 -->
+                        <td>
+
+                            <article class="menu-item">
+
+                                <div class="menu-img-wrapper">
+                                    <img
+                                        src="images/jiaozi-dumplings.jpg"
+                                        alt="Chinese Dumpling"
+                                    >
+                                </div>
+
+                                <div class="menu-content">
+
+                                    <div class="dish-top">
+
+                                        <span class="dish-name">
+                                            Chinese Dumpling
+                                        </span>
+
+                                        <span class="dish-leader"></span>
+
+                                        <span class="dish-price">
+                                            $2.50
+                                        </span>
+
+                                    </div>
+
+                                    <p class="dish-desc">
+                                        Dim sum berisi daging
+                                        dan sayuran.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <!-- MENU 3 -->
+                        <td>
+
+                            <article class="menu-item">
+
+                                <div class="menu-img-wrapper">
+                                    <img
+                                        src="images/Chinese Fried Rice.jpg"
+                                        alt="Chinese Fried Rice"
+                                    >
+                                </div>
+
+                                <div class="menu-content">
+
+                                    <div class="dish-top">
+
+                                        <span class="dish-name">
+                                            Chinese Fried Rice
+                                        </span>
+
+                                        <span class="dish-leader"></span>
+
+                                        <span class="dish-price">
+                                            $2.80
+                                        </span>
+
+                                    </div>
+
+                                    <p class="dish-desc">
+                                        Nasi goreng khas China
+                                        dengan telur dan sayuran.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                        </td>
+
+
+                        <!-- MENU 4 -->
+                        <td>
+
+                            <article class="menu-item">
+
+                                <div class="menu-img-wrapper">
+                                    <img
+                                        src="images/Chicken Chow Mein.jpg"
+                                        alt="Chow Mein"
+                                    >
+                                </div>
+
+                                <div class="menu-content">
+
+                                    <div class="dish-top">
+
+                                        <span class="dish-name">
+                                            Chow Mein
+                                        </span>
+
+                                        <span class="dish-leader"></span>
+
+                                        <span class="dish-price">
+                                            $3.00
+                                        </span>
+
+                                    </div>
+
+                                    <p class="dish-desc">
+                                        Mie goreng khas China
+                                        dengan ayam dan sayuran.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <!-- MENU 5 -->
+                        <td colspan="2">
+
+                            <article class="menu-item menu-item-featured">
+
+                                <div class="menu-img-wrapper">
+                                    <img
+                                        src="images/Sweet and Sour Chicken.jpg"
+                                        alt="Sweet and Sour Chicken"
+                                    >
+                                </div>
+
+                                <div class="menu-content">
+
+                                    <div class="dish-top">
+
+                                        <span class="dish-name">
+                                            Sweet and Sour Chicken
+                                        </span>
+
+                                        <span class="dish-leader"></span>
+
+                                        <span class="dish-price">
+                                            $3.20
+                                        </span>
+
+                                    </div>
+
+                                    <p class="dish-desc">
+                                        Ayam dengan saus asam manis
+                                        khas China.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+
+            <!-- MINUMAN -->
+            <div class="group-label">
+                Minuman
             </div>
+
+
+            <table class="menu-table single-menu">
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+
+                            <article class="menu-item">
+
+                                <div class="menu-img-wrapper">
+                                    <img
+                                        src="images/Chinese Tea.jpg"
+                                        alt="Chinese Tea"
+                                    >
+                                </div>
+
+                                <div class="menu-content">
+
+                                    <div class="dish-top">
+
+                                        <span class="dish-name">
+                                            Chinese Tea
+                                        </span>
+
+                                        <span class="dish-leader"></span>
+
+                                        <span class="dish-price">
+                                            $1.00
+                                        </span>
+
+                                    </div>
+
+                                    <p class="dish-desc">
+                                        Teh China dengan aroma
+                                        khas dan menyegarkan.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
         </section>
 
+
+        <!-- INFORMASI RESTORAN -->
         <section class="address-section" id="alamat">
-            <h2>Kunjungi Kami</h2>
-            <div class="address-card">
-                <div class="pin">
-                    <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 27s10-9.5 10-16.5A10 10 0 0 0 5 10.5C5 17.5 15 27 15 27Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="15" cy="10.5" r="3.4" stroke="currentColor" stroke-width="1.3"/></svg>
-                </div>
-                <p class="addr-text">Jl. Chinatown No. 88, Jakarta, Indonesia
-                    <span>Buka setiap hari · 10.00 – 22.00</span>
-                </p>
-            </div>
+
+            <h2>Informasi Restoran</h2>
+
+            <p class="section-note">
+                Informasi lengkap mengenai lokasi dan
+                jam operasional Golden Dragon.
+            </p>
+
+            <table class="info-table">
+
+                <tbody>
+
+                    <tr>
+                        <th>Alamat</th>
+
+                        <td>
+                            Jl. Chinatown No. 88,
+                            Jakarta, Indonesia
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Jam Buka</th>
+
+                        <td>
+                            Setiap hari ·
+                            10.00 – 22.00
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Kontak</th>
+
+                        <td>
+                            Golden Dragon Chinese Restaurant
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Status</th>
+
+                        <td class="status-open">
+                            Buka setiap hari
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
         </section>
 
     </main>
 
+
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 Golden Dragon Chinese Restaurant. All Rights Reserved.</p>
+
+        <p>
+            &copy; 2026 Golden Dragon Chinese Restaurant.
+            All Rights Reserved.
+        </p>
+
     </footer>
 
 </body>
