@@ -726,6 +726,197 @@ td {
 
 
 /* =========================
+   BOOKING FORM
+========================= */
+
+.booking-form {
+    display: grid;
+    gap: 18px;
+}
+
+.form-panel {
+    min-width: 0;
+    padding: 20px;
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+}
+
+.form-panel legend {
+    padding: 0 8px;
+    color: var(--gold);
+    font-family: 'Besley', serif;
+    font-size: 1.05rem;
+    font-style: italic;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.form-field {
+    display: grid;
+    gap: 6px;
+    color: var(--paper-dim);
+    font-size: 0.84rem;
+}
+
+.form-field input,
+.order-item input[type="number"] {
+    width: 100%;
+    min-height: 42px;
+    padding: 9px 11px;
+    color: var(--paper);
+    background: var(--ink);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    font: inherit;
+}
+
+.form-field input:focus,
+.order-item input[type="number"]:focus {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+}
+
+.form-hint {
+    margin: -4px 0 15px;
+    color: var(--paper-dim);
+    font-size: 0.82rem;
+}
+
+.menu-order-group + .menu-order-group {
+    margin-top: 20px;
+}
+
+.menu-order-group h3 {
+    margin-bottom: 8px;
+    color: var(--gold);
+    font-family: 'Besley', serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.order-item {
+    display: grid;
+    grid-template-columns: 18px minmax(0, 1fr) 100px;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    color: var(--paper);
+    font-size: 0.86rem;
+}
+
+.order-item input[type="checkbox"],
+.payment-method input,
+.wallet-options input {
+    accent-color: var(--gold);
+}
+
+.order-item input[type="number"] {
+    min-height: 36px;
+    padding: 6px 8px;
+    font-size: 0.8rem;
+}
+
+.payment-choice + .payment-choice {
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px solid var(--rule);
+}
+
+.payment-method {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    color: var(--paper);
+    font-size: 0.88rem;
+}
+
+.payment-logos,
+.wallet-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-visa,
+.logo-mastercard,
+.wallet-options span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    height: 28px;
+    padding: 0 8px;
+    background: #f7f4ed;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 0.76rem;
+    font-weight: 700;
+}
+
+.logo-visa { color: #17347a; font-style: italic; }
+
+.logo-mastercard {
+    position: relative;
+    min-width: 70px;
+    padding-left: 26px;
+    color: #202020;
+    font-size: 0.43rem;
+}
+
+.logo-mastercard i {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 14px;
+    height: 14px;
+    background: #eb001b;
+    border-radius: 50%;
+}
+
+.logo-mastercard i + i {
+    left: 16px;
+    background: #f79e1b;
+    opacity: 0.9;
+}
+
+.wallet-options {
+    flex-wrap: wrap;
+    margin: 12px 0 0 26px;
+}
+
+.wallet-options label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.wallet-options .logo-gopay { color: #008fe5; }
+.wallet-options .logo-ovo { color: #4c2c91; }
+.wallet-options .logo-dana { color: #1688e8; }
+
+.submit-order {
+    justify-self: start;
+    min-height: 46px;
+    padding: 10px 22px;
+    color: var(--paper);
+    background: var(--lacquer);
+    border: 1px solid var(--lacquer-light);
+    border-radius: 4px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit-order:hover { background: var(--lacquer-light); }
+
+
+/* =========================
    INFORMATION TABLE
 ========================= */
 
@@ -815,6 +1006,14 @@ footer {
 
     section {
         padding: 36px 0;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-panel {
+        padding: 16px;
     }
 
 
