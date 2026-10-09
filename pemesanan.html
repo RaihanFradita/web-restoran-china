@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan - Golden Dragon</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav class="dashboard">
+        <div class="container dashboard-inner">
+            <a class="dashboard-brand" href="index.html">Golden Dragon</a>
+            <ul class="dashboard-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#pemesanan">Cara Pesan</a></li>
+                <li><a href="pemesanan.html" aria-current="page">Pesan</a></li>
+                <li><a href="index.html#kategori">Kategori</a></li>
+                <li><a href="index.html#menu">Menu</a></li>
+                <li><a href="index.html#alamat">Alamat</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <!-- FORM PEMESANAN -->
+        <section class="booking-section" id="form-pemesanan">
+
+            <h2>Form Pemesanan</h2>
+
+            <p class="section-note">
+                Isi data diri, pilih menu dan metode pembayaran untuk booking Anda.
+            </p>
+
+            <form class="booking-form" action="#form-pemesanan" method="post">
+                <fieldset class="form-panel">
+                    <legend>Informasi Pemesan</legend>
+
+                    <div class="form-grid">
+                        <label class="form-field">
+                            <span>Nama lengkap</span>
+                            <input type="text" name="nama" autocomplete="name" placeholder="Nama sesuai identitas" required>
+                        </label>
+
+                        <label class="form-field">
+                            <span>No. HP</span>
+                            <input type="tel" name="no-hp" autocomplete="tel" inputmode="tel" placeholder="08xxxxxxxxxx" required>
+                        </label>
+
+                        <label class="form-field">
+                            <span>Tanggal booking</span>
+                            <input type="date" name="tanggal-booking" required>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-panel">
+                    <legend>Pilih Menu</legend>
+                    <p class="form-hint">Centang menu yang dipesan, lalu masukkan jumlahnya.</p>
+
+                    <div class="menu-order-group">
+                        <h3>Makanan</h3>
+                        <label class="order-item"><input type="checkbox" name="menu[]" value="Kung Pao Chicken"><span>Kung Pao Chicken</span><input type="number" name="jumlah-kung-pao" min="1" placeholder="Jumlah" aria-label="Jumlah Kung Pao Chicken"></label>
+                        <label class="order-item"><input type="checkbox" name="menu[]" value="Chinese Dumpling"><span>Chinese Dumpling</span><input type="number" name="jumlah-dumpling" min="1" placeholder="Jumlah" aria-label="Jumlah Chinese Dumpling"></label>
+                        <label class="order-item"><input type="checkbox" name="menu[]" value="Chinese Fried Rice"><span>Chinese Fried Rice</span><input type="number" name="jumlah-fried-rice" min="1" placeholder="Jumlah" aria-label="Jumlah Chinese Fried Rice"></label>
+                        <label class="order-item"><input type="checkbox" name="menu[]" value="Chow Mein"><span>Chow Mein</span><input type="number" name="jumlah-chow-mein" min="1" placeholder="Jumlah" aria-label="Jumlah Chow Mein"></label>
+                        <label class="order-item"><input type="checkbox" name="menu[]" value="Sweet and Sour Chicken"><span>Sweet and Sour Chicken</span><input type="number" name="jumlah-sweet-sour" min="1" placeholder="Jumlah" aria-label="Jumlah Sweet and Sour Chicken"></label>
+                    </div>
+
+                    <div class="menu-order-group">
+                        <h3>Minuman</h3>
+                        <label class="order-item"><input type="checkbox" name="menu[]" value="Chinese Tea"><span>Chinese Tea</span><input type="number" name="jumlah-teh" min="1" placeholder="Jumlah" aria-label="Jumlah Chinese Tea"></label>
+                    </div>
+
+                    <div class="menu-order-group">
+                        <h3>Dessert</h3>
+                        <label class="order-item"><input type="checkbox" name="menu[]" value="Es Buah Mandarin"><span>Es Buah Mandarin</span><input type="number" name="jumlah-es-buah" min="1" placeholder="Jumlah" aria-label="Jumlah Es Buah Mandarin"></label>
+                        <label class="order-item"><input type="checkbox" name="menu[]" value="Puding Lychee"><span>Puding Lychee</span><input type="number" name="jumlah-puding" min="1" placeholder="Jumlah" aria-label="Jumlah Puding Lychee"></label>
+                        <label class="order-item"><input type="checkbox" name="menu[]" value="Tangyuan"><span>Tangyuan</span><input type="number" name="jumlah-tangyuan" min="1" placeholder="Jumlah" aria-label="Jumlah Tangyuan"></label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-panel">
+                    <legend>Pembayaran</legend>
+                    <p class="form-hint">Pilih metode pembayaran yang akan digunakan.</p>
+
+                    <div class="payment-choice">
+                        <label class="payment-method">
+                            <input type="radio" name="metode-pembayaran" value="kartu" required>
+                            <span>Kartu debit/kredit</span>
+                            <span class="payment-logos" aria-label="Visa dan Mastercard"><span class="logo-visa">VISA</span><span class="logo-mastercard"><i></i><i></i><b>mastercard</b></span></span>
+                        </label>
+                        <div class="card-details">
+                            <label class="form-field">
+                                <span>Nomor kartu</span>
+                                <input type="text" name="nomor-kartu" inputmode="numeric" autocomplete="cc-number" placeholder="•••• •••• •••• ••••" aria-label="Nomor kartu debit atau kredit">
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="payment-choice">
+                        <label class="payment-method">
+                            <input type="radio" name="metode-pembayaran" value="dompet-digital">
+                            <span>Dompet digital</span>
+                        </label>
+                        <div class="wallet-options" role="group" aria-label="Pilih dompet digital">
+                            <label><input type="radio" name="dompet-digital" value="GoPay"><span class="logo-gopay">GoPay</span></label>
+                            <label><input type="radio" name="dompet-digital" value="OVO"><span class="logo-ovo">OVO</span></label>
+                            <label><input type="radio" name="dompet-digital" value="DANA"><span class="logo-dana">DANA</span></label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <button class="submit-order" type="submit">Kirim Pemesanan</button>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Golden Dragon Chinese Restaurant. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
